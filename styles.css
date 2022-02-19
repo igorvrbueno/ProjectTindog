@@ -19,6 +19,7 @@ h2 {
   font-weight: bold;
   font-size: 2.5rem;
   line-height: 1.5;
+  margin: 3% 0 1%;
 }
 
 h3 {
@@ -60,25 +61,32 @@ p {
 
 /* Download Buttons */
 .download-btn {
-  margin: 5% 3% 5% 0;
+  margin: 5% 3%;
+}
+
+.download-btn-cta {
+  margin: 1%;
 }
 
 /* Title image */
+
 .title-image {
   transform: rotate(25deg);
-  width: 60%;
-  margin-left: 100px;
+  width: 260px;
+  position: absolute;
+  margin-left: 5%;
+
+
 
 }
 /*features Box*/
 
 #features {
   text-align: center;
-}
-
-
-.feature-box {
   padding: 15% 7%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .icon {
@@ -89,10 +97,18 @@ p {
    color: #e8274e;
  }
 
+ .feature.box {
+   margin: 7% 3%;
+ }
+
+ .description-features {
+   margin-bottom: 10%;
+ }
+
 /*testimonials*/
 
 #testimonials {
-  background-color:  #e8274e;
+  background-color: #d21f3c;
   text-align: center;
   color: #fff;
 }
@@ -110,7 +126,7 @@ p {
 /* Press */
 
 #press {
-  background-color: #e8274e;
+  background-color: #d21f3c;
   text-align: center;
   padding-bottom: 5%;
 
@@ -130,5 +146,55 @@ p {
 
  .pricing-column {
   padding: 3% 2%;
+
+ }
+
+ /* CTA */
+
+#cta {
+background-color: #e8274e;
+text-align: center;
+height: 400px;
+color: #fff;
+padding: 2% 15%;
+
+}
+
+.h3-cta {
+  font-size: 3rem;
+  font-family: Montserrat;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 2% 0 10%;
+
+}
+
+/* Footer */
+
+#footer {
+background-color: #fff;
+text-align: center;
+height: 200px;
+padding: 7% 15%;
+
+}
+.social-icon{
+  margin: 0 1%;
+}
+
+
+
+
+ @media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
 
  }
